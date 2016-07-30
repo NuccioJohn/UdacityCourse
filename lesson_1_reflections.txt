@@ -1,1 +1,7 @@
 Now that you have your workspace set up, what do you want to try using Git for?
+
+A: For all my Android Stuio Projects.
+
+How do the diagrams help you visualize the branch structure
+
+A. When viewing GIT in Terminals you can only see the process in parts. The diagrams allows you to see git holistically.

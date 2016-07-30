@@ -1,18 +1,43 @@
-What happens when you initialize a repository? Why do you need to do it?
+﻿What happens when you initialize a repository? Why do you need to do it?
+
+A: git init within the folder you want to initialize a repository.Executing git init creates 
+a .git subdirectory in the project root, which contains all of the necessary metadata for the repo. 
+Aside from the .git directory, an existing project remains unaltered (unlike SVN, Git doesn't 
+require a .git folder in every subdirectory). 
 
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
 
+A: Staging area is the preparation area for files to be committed. Only files in this area 
+are going to be included in the commit executed next time. It helps to divide changes in the 
+working directory into several commits, each of which consists of a group of changes that 
+represent a logical change to the relevant files.
+
 How can you use the staging area to make sure you have one commit per logical
 change?
+
+A: You can use the command "git add <file name>" and not the command "git add .". "git add ." adds 
+all the files that you have modified to your commit. You can only add one message when you do it 
+this way. Using "git add <file name>" allows you to add each file with a specific commit message.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+A: When you want to implement an experimental change while keeping the main project intact. Also if you want
+your project to have different modes/versions. 
+
 How do the diagrams help you visualize the branch structure?
+
+A: You have to understand the linear progression of each branch to understand each others simularites and differences. 
+A Diagram can illustrate how each branch differes from the point they both broke off the main branch.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+A: Its because merging can be done with minimal to intricate control. Its so we can visualize how one person could manage
+multiple different changes.
+
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+A: Obvious manual control gives you more freedom to pick how the merge goes through. Automatic Merging is quicker and easier. 
